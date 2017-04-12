@@ -1,0 +1,2 @@
+# ExoticOres
+ExoticOresMod for Minetest
