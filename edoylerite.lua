@@ -1,47 +1,47 @@
---sideronatrite--
+--edoylerite--
 --nodes--
-minetest.register_node("exoticores:stone_with_sideronatrite", {
-	tiles = {"exoticores_stone.png^exoticores_sideronatrite.png"},
+minetest.register_node("exoticores:stone_with_edoylerite", {
+	tiles = {"exoticores_stone.png^exoticores_edoylerite.png"},
 	groups = {cracky=1},
-	description = "sideronatrite Ore",
-	drop = "exoticores:sideronatrite_lump",
+	description = "edoylerite Ore",
+	drop = "exoticores:edoylerite_lump",
 	paramtype = "light",
 	light_source = 10,
 })
 
-minetest.register_node("exoticores:sideronatrite_block", {
-	tiles = {"exoticores_sideronatrite_block.png"},
+minetest.register_node("exoticores:edoylerite_block", {
+	tiles = {"exoticores_edoylerite_block.png"},
 	groups = {cracky=1},
-	description = "sideronatrite Block",
+	description = "edoylerite Block",
 	paramtype = "light",
 	light_source = 20,
 })
 --crafting--
 minetest.register_craft({
 	type = "cooking",
-	output = "exoticores:sideronatrite_bar",
-	recipe = "exoticores:sideronatrite_lump",
+	output = "exoticores:edoylerite_bar",
+	recipe = "exoticores:edoylerite_lump",
 })
 minetest.register_craft({
-	output = 'exoticores:sideronatrite_block',
+	output = 'exoticores:edoylerite_block',
 	recipe = {
-		{'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
-		{'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
-		{'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
+		{'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar'},
+		{'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar'},
+		{'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar'},
 	}
 })
 minetest.register_craft({
-	output = 'exoticores:pick_sideronatrite',
+	output = 'exoticores:pick_edoylerite',
 	recipe = {
-		{'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
+		{'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar'},
 		{'', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })
 --tools--
-minetest.register_tool("exoticores:pick_sideronatrite", {
-	description = "sideronatrite Pickaxe",
-	inventory_image = "exoticores_tool_sideronatritepick.png",
+minetest.register_tool("exoticores:pick_edoylerite", {
+	description = "edoylerite Pickaxe",
+	inventory_image = "exoticores_tool_edoyleritepick.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
@@ -52,10 +52,10 @@ minetest.register_tool("exoticores:pick_sideronatrite", {
 	},
 })
 
-minetest.register_tool("exoticores:shovel_sideronatrite", {
-	description = "sideronatrite Shovel",
-	inventory_image = "exoticores_tool_sideronatriteshovel.png",
-	wield_image = "exoticores_tool_sideronatriteshovel.png^[transformR90",
+minetest.register_tool("exoticores:shovel_edoylerite", {
+	description = "edoylerite Shovel",
+	inventory_image = "exoticores_tool_edoyleriteshovel.png",
+	wield_image = "exoticores_tool_edoyleriteshovel.png^[transformR90",
 	tool_capabilities = {
 		full_punch_interval = 1.0,
 		max_drop_level=1,
@@ -67,9 +67,9 @@ minetest.register_tool("exoticores:shovel_sideronatrite", {
 	},
 })
 
-minetest.register_tool("exoticores:axe_sideronatrite", {
-	description = "sideronatrite Axe",
-	inventory_image = "exoticores_tool_sideronatriteaxe.png",
+minetest.register_tool("exoticores:axe_edoylerite", {
+	description = "edoylerite Axe",
+	inventory_image = "exoticores_tool_edoyleriteaxe.png",
 	tool_capabilities = {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
@@ -80,9 +80,9 @@ minetest.register_tool("exoticores:axe_sideronatrite", {
 	},
 })
 
-minetest.register_tool("exoticores:sword_sideronatrite", {
-	description = "sideronatrite Sword",
-	inventory_image = "exoticores_tool_sideronatritesword.png",
+minetest.register_tool("exoticores:sword_edoylerite", {
+	description = "edoylerite Sword",
+	inventory_image = "exoticores_tool_edoyleritesword.png",
 	tool_capabilities = {
 		full_punch_interval = 0.1,
 		max_drop_level=1,
@@ -93,43 +93,43 @@ minetest.register_tool("exoticores:sword_sideronatrite", {
 	}
 })
 minetest.register_craft({
-	output = 'exoticores:shovel_sideronatrite',
+	output = 'exoticores:shovel_edoylerite',
 	recipe = {
-		{'', 'exoticores:sideronatrite_bar', ''},
+		{'', 'exoticores:edoylerite_bar', ''},
 		{'', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })
 minetest.register_craft({
-	output = 'exoticores:axe_sideronatrite',
+	output = 'exoticores:axe_edoylerite',
 	recipe = {
-		{'', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
-		{'', 'group:stick', 'exoticores:sideronatrite_bar'},
+		{'', 'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar'},
+		{'', 'group:stick', 'exoticores:edoylerite_bar'},
 		{'', 'group:stick', ''},
 	}
 })
 minetest.register_craft({
-	output = 'exoticores:sword_sideronatrite',
+	output = 'exoticores:sword_edoylerite',
 	recipe = {
-		{'', 'exoticores:sideronatrite_bar', ''},
-		{'', 'exoticores:sideronatrite_bar', ''},
+		{'', 'exoticores:edoylerite_bar', ''},
+		{'', 'exoticores:edoylerite_bar', ''},
 		{'', 'group:stick', ''},
 	}
 })
 --craftitems--
-minetest.register_craftitem("exoticores:sideronatrite_lump", {
-	description = "sideronatrite Lump",
-	inventory_image = "exoticores_sideronatrite_lump.png",
+minetest.register_craftitem("exoticores:edoylerite_lump", {
+	description = "edoylerite Lump",
+	inventory_image = "exoticores_edoylerite_lump.png",
 })
-minetest.register_craftitem("exoticores:sideronatrite_bar", {
-	description = "sideronatrite Lump",
-	inventory_image = "exoticores_sideronatrite_bar.png",
+minetest.register_craftitem("exoticores:edoylerite_bar", {
+	description = "edoylerite Lump",
+	inventory_image = "exoticores_edoylerite_bar.png",
 })
 
 --mapgen--
 minetest.register_ore({
 		ore_type       = "scatter",
-		ore            = "exoticores:stone_with_sideronatrite",
+		ore            = "exoticores:stone_with_edoylerite",
 		wherein        = "default:stone",
 		clust_scarcity = 24 * 24 * 24,
 		clust_num_ores = 15,
