@@ -1,13 +1,10 @@
 cobaltominite
 abelsonite
 fingerite
-edoylerite
 Edoylerite
-metasideronatrite
 sideronatrite
 Hazen
 Ausubel
 nevadaite
-Beryl
-Topaz
+--finished--
 sideronatrite, cobaltominite, nevadaite
