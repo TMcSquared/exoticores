@@ -131,7 +131,7 @@ minetest.register_ore({
 		ore_type       = "scatter",
 		ore            = "exoticores:stone_with_edoylerite",
 		wherein        = "default:stone",
-		clust_scarcity = 30 * 30 * 30,
+		clust_scarcity = 35 * 35 * 35,
 		clust_num_ores = 15,
 		clust_size     = 6,
 		y_min          = -31000,
