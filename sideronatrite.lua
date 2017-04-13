@@ -138,3 +138,13 @@ minetest.register_ore({
 		y_min          = -31000,
 		y_max          = 0,
 	})
+minetest.register_ore({
+		ore_type       = "scatter",
+		ore            = "exoticores:stone_with_sideronatrite",
+		wherein        = "default:stone",
+		clust_scarcity = 8 * 8 * 8,
+		clust_num_ores = 15,
+		clust_size     = 6,
+		y_min          = -1100,
+		y_max          = -1000,
+	})
