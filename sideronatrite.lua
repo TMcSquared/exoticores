@@ -38,6 +38,30 @@ minetest.register_craft({
 		{'', 'group:stick', ''},
 	}
 })
+minetest.register_craft({
+	output = 'exoticores:shovel_sideronatrite',
+	recipe = {
+		{'', 'exoticores:sideronatrite_bar', ''},
+		{'', 'group:stick', ''},
+		{'', 'group:stick', ''},
+	}
+})
+minetest.register_craft({
+	output = 'exoticores:axe_sideronatrite',
+	recipe = {
+		{'', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
+		{'', 'group:stick', 'exoticores:sideronatrite_bar'},
+		{'', 'group:stick', ''},
+	}
+})
+minetest.register_craft({
+	output = 'exoticores:sword_sideronatrite',
+	recipe = {
+		{'', 'exoticores:sideronatrite_bar', ''},
+		{'', 'exoticores:sideronatrite_bar', ''},
+		{'', 'group:stick', ''},
+	}
+})
 --tools--
 minetest.register_tool("exoticores:pick_sideronatrite", {
 	description = "sideronatrite Pickaxe",
@@ -92,30 +116,7 @@ minetest.register_tool("exoticores:sword_sideronatrite", {
 		damage_groups = {fleshy=20},
 	}
 })
-minetest.register_craft({
-	output = 'exoticores:shovel_sideronatrite',
-	recipe = {
-		{'', 'exoticores:sideronatrite_bar', ''},
-		{'', 'group:stick', ''},
-		{'', 'group:stick', ''},
-	}
-})
-minetest.register_craft({
-	output = 'exoticores:axe_sideronatrite',
-	recipe = {
-		{'', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
-		{'', 'group:stick', 'exoticores:sideronatrite_bar'},
-		{'', 'group:stick', ''},
-	}
-})
-minetest.register_craft({
-	output = 'exoticores:sword_sideronatrite',
-	recipe = {
-		{'', 'exoticores:sideronatrite_bar', ''},
-		{'', 'exoticores:sideronatrite_bar', ''},
-		{'', 'group:stick', ''},
-	}
-})
+
 --craftitems--
 minetest.register_craftitem("exoticores:sideronatrite_lump", {
 	description = "sideronatrite Lump",
