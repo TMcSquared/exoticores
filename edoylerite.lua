@@ -38,60 +38,6 @@ minetest.register_craft({
 		{'', 'group:stick', ''},
 	}
 })
---tools--
-minetest.register_tool("exoticores:pick_edoylerite", {
-	description = "edoylerite Pickaxe",
-	inventory_image = "exoticores_tool_edoyleritepick.png",
-	tool_capabilities = {
-		full_punch_interval = 0.9,
-		max_drop_level=3,
-		groupcaps={
-			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=60, maxlevel=3},
-		},
-		damage_groups = {fleshy=5},
-	},
-})
-
-minetest.register_tool("exoticores:shovel_edoylerite", {
-	description = "edoylerite Shovel",
-	inventory_image = "exoticores_tool_edoyleriteshovel.png",
-	wield_image = "exoticores_tool_edoyleriteshovel.png^[transformR90",
-	tool_capabilities = {
-		full_punch_interval = 1.0,
-		max_drop_level=1,
-		range = 5.0,
-		groupcaps={
-			crumbly = {times={[1]=1.10, [2]=0.50, [3]=0.30}, uses=60, maxlevel=3},
-		},
-		damage_groups = {fleshy=4},
-	},
-})
-
-minetest.register_tool("exoticores:axe_edoylerite", {
-	description = "edoylerite Axe",
-	inventory_image = "exoticores_tool_edoyleriteaxe.png",
-	tool_capabilities = {
-		full_punch_interval = 0.9,
-		max_drop_level=1,
-		groupcaps={
-			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=60, maxlevel=2},
-		},
-		damage_groups = {fleshy=7},
-	},
-})
-
-minetest.register_tool("exoticores:sword_edoylerite", {
-	description = "edoylerite Sword",
-	inventory_image = "exoticores_tool_edoyleritesword.png",
-	tool_capabilities = {
-		full_punch_interval = 0.1,
-		max_drop_level=1,
-		groupcaps={
-			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=1600, maxlevel=3},
-		},
-		damage_groups = {fleshy=20},
-	}
-})
 minetest.register_craft({
 	output = 'exoticores:shovel_edoylerite',
 	recipe = {
@@ -116,6 +62,62 @@ minetest.register_craft({
 		{'', 'group:stick', ''},
 	}
 })
+--tools--
+minetest.register_tool("exoticores:pick_edoylerite", {
+	description = "edoylerite Pickaxe",
+	inventory_image = "exoticores_tool_edoyleritepick.png",
+	range = 8.0,
+	tool_capabilities = {
+		full_punch_interval = 0.9,
+		max_drop_level=3,
+		groupcaps={
+			cracky = {times={[1]=.20, [2]=.30, [3]=0.10}, uses=60, maxlevel=3},
+		},
+		damage_groups = {fleshy=5},
+	},
+})
+
+minetest.register_tool("exoticores:shovel_edoylerite", {
+	description = "edoylerite Shovel",
+	inventory_image = "exoticores_tool_edoyleriteshovel.png",
+	wield_image = "exoticores_tool_edoyleriteshovel.png^[transformR90",
+	tool_capabilities = {
+		full_punch_interval = 1.0,
+		max_drop_level=1,
+		range = 5.0,
+		groupcaps={
+			crumbly = {times={[1]=.10, [2]=0.50, [3]=0.30}, uses=60, maxlevel=3},
+		},
+		damage_groups = {fleshy=4},
+	},
+})
+
+minetest.register_tool("exoticores:axe_edoylerite", {
+	description = "edoylerite Axe",
+	inventory_image = "exoticores_tool_edoyleriteaxe.png",
+	tool_capabilities = {
+		full_punch_interval = 0.9,
+		max_drop_level=1,
+		groupcaps={
+			choppy={times={[1]=.10, [2]=0.90, [3]=0.50}, uses=60, maxlevel=2},
+		},
+		damage_groups = {fleshy=7},
+	},
+})
+
+minetest.register_tool("exoticores:sword_edoylerite", {
+	description = "edoylerite Sword",
+	inventory_image = "exoticores_tool_edoyleritesword.png",
+	tool_capabilities = {
+		full_punch_interval = 0.1,
+		max_drop_level=1,
+		groupcaps={
+			snappy={times={[1]=.90, [2]=0.45, [3]=0.30}, uses=1600, maxlevel=3},
+		},
+		damage_groups = {fleshy=20},
+	}
+})
+
 --craftitems--
 minetest.register_craftitem("exoticores:edoylerite_lump", {
 	description = "edoylerite Lump",
@@ -131,9 +133,20 @@ minetest.register_ore({
 		ore_type       = "scatter",
 		ore            = "exoticores:stone_with_edoylerite",
 		wherein        = "default:stone",
-		clust_scarcity = 35 * 35 * 35,
-		clust_num_ores = 15,
+		clust_scarcity = 25 * 25 * 25,
+		clust_num_ores = 10,
 		clust_size     = 6,
 		y_min          = -31000,
 		y_max          = 0,
 	})
+	
+minetest.register_ore({
+		ore_type       = "scatter",
+		ore            = "exoticores:stone_with_edoylerite",
+		wherein        = "default:stone",
+		clust_scarcity = 8 * 8 * 8,
+		clust_num_ores = 10,
+		clust_size     = 6,
+		y_min          = -2100,
+		y_max          = -2000,
+	})	

@@ -86,7 +86,16 @@ minetest.register_ore({
 		y_min          = -31000,
 		y_max          = 0,
 	})
-
+minetest.register_ore({
+		ore_type       = "scatter",
+		ore            = "exoticores:stone_with_nevadaite",
+		wherein        = "default:stone",
+		clust_scarcity = 8 * 8 * 8,
+		clust_num_ores = 30,
+		clust_size     = 6,
+		y_min          = -200,
+		y_max          = -190,
+	})
 --tools--
 
 minetest.register_tool("exoticores:pick_nevadaite", {
