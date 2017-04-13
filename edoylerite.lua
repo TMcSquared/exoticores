@@ -71,7 +71,7 @@ minetest.register_tool("exoticores:pick_edoylerite", {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=60, maxlevel=3},
+			cracky = {times={[1]=.20, [2]=.30, [3]=0.10}, uses=60, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
 	},
@@ -86,7 +86,7 @@ minetest.register_tool("exoticores:shovel_edoylerite", {
 		max_drop_level=1,
 		range = 5.0,
 		groupcaps={
-			crumbly = {times={[1]=1.10, [2]=0.50, [3]=0.30}, uses=60, maxlevel=3},
+			crumbly = {times={[1]=.10, [2]=0.50, [3]=0.30}, uses=60, maxlevel=3},
 		},
 		damage_groups = {fleshy=4},
 	},
@@ -99,7 +99,7 @@ minetest.register_tool("exoticores:axe_edoylerite", {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
 		groupcaps={
-			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=60, maxlevel=2},
+			choppy={times={[1]=.10, [2]=0.90, [3]=0.50}, uses=60, maxlevel=2},
 		},
 		damage_groups = {fleshy=7},
 	},
@@ -112,7 +112,7 @@ minetest.register_tool("exoticores:sword_edoylerite", {
 		full_punch_interval = 0.1,
 		max_drop_level=1,
 		groupcaps={
-			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=1600, maxlevel=3},
+			snappy={times={[1]=.90, [2]=0.45, [3]=0.30}, uses=1600, maxlevel=3},
 		},
 		damage_groups = {fleshy=20},
 	}
