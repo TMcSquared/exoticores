@@ -4,4 +4,6 @@ dofile(minetest.get_modpath("exoticores").."/cobaltominite.lua")
 dofile(minetest.get_modpath("exoticores").."/sideronatrite.lua")
 dofile(minetest.get_modpath("exoticores").."/edoylerite.lua")
 dofile(minetest.get_modpath("exoticores").."/lonsdaleite.lua")
-dofile(minetest.get_modpath("exoticores").."/armor.lua")
+if minetest.get_modpath("3d_armor") then
+	dofile(minetest.get_modpath("exoticores").."/armor.lua")
+end
