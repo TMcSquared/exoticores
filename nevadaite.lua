@@ -41,12 +41,6 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = 'exoticores:nevadaite_bar 9',
-	recipe = {
-		{'exoticores:nevadaite_block'},
-	}
-})
-minetest.register_craft({
 	output = 'exoticores:shovel_nevadaite',
 	recipe = {
 		{'', 'exoticores:nevadaite_bar', ''},
@@ -115,7 +109,6 @@ minetest.register_tool("exoticores:shovel_nevadaite", {
 	tool_capabilities = {
 		full_punch_interval = 1.0,
 		max_drop_level=1,
-		range = 5.0,
 		groupcaps={
 			crumbly = {times={[1]=1.10, [2]=0.50, [3]=0.30}, uses=100, maxlevel=3},
 		},
@@ -130,7 +123,7 @@ minetest.register_tool("exoticores:axe_nevadaite", {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
 		groupcaps={
-			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=100, maxlevel=2},
+			choppy={times={[1]=2.0, [2]=0.90, [3]=0.50}, uses=100, maxlevel=2},
 		},
 		damage_groups = {fleshy=7},
 	},

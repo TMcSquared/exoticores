@@ -84,7 +84,7 @@ minetest.register_tool("exoticores:shovel_sideronatrite", {
 		full_punch_interval = 1.0,
 		max_drop_level=1,
 		groupcaps={
-			crumbly = {times={[1]=.750, [2]=0.30, [3]=0.20}, uses=6000, maxlevel=3},
+			crumbly = {times={[1]=.50, [2]=0.30, [3]=0.20}, uses=6000, maxlevel=3},
 		},
 		damage_groups = {fleshy=4},
 	},
@@ -97,7 +97,7 @@ minetest.register_tool("exoticores:axe_sideronatrite", {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
 		groupcaps={
-			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=6000, maxlevel=2},
+			choppy={times={[1]=1.0, [2]=0.90, [3]=0.50}, uses=6000, maxlevel=2},
 		},
 		damage_groups = {fleshy=7},
 	},
@@ -110,7 +110,7 @@ minetest.register_tool("exoticores:sword_sideronatrite", {
 		full_punch_interval = 0.1,
 		max_drop_level=1,
 		groupcaps={
-			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=16000, maxlevel=3},
+			snappy={times={[1]=1.30, [2]=0.50, [3]=0.250}, uses=16000, maxlevel=3},
 		},
 		damage_groups = {fleshy=20},
 	}
