@@ -1,37 +1,14 @@
-## Welcome to GitHub Pages
+##Exotic Ores Mod
 
-You can use the [editor on GitHub](https://github.com/ThomasMonroe314/ExoticOres/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+This mod contains some of the rarest ores in real life, but not necesarily in game.
+It will also contain armor for each of the ores* .
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+*WIP at the moment.
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ThomasMonroe314/ExoticOres/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#The currently contained ores are:
+- Nevadaite
+- Cobaltominite
+- Sideronatrite
+- edoylerite
+- trinium
+- and lastly, lonsdaleite one of the hardest to obtain ores.

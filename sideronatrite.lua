@@ -6,7 +6,7 @@ minetest.register_node("exoticores:stone_with_sideronatrite", {
 	description = "sideronatrite Ore",
 	drop = "exoticores:sideronatrite_lump",
 	paramtype = "light",
-	light_source = 10,
+	light_source = 6,
 })
 
 minetest.register_node("exoticores:sideronatrite_block", {
@@ -14,7 +14,7 @@ minetest.register_node("exoticores:sideronatrite_block", {
 	groups = {cracky=1},
 	description = "sideronatrite Block",
 	paramtype = "light",
-	light_source = 20,
+	light_source = 7,
 })
 --crafting--
 minetest.register_craft({
@@ -67,10 +67,10 @@ minetest.register_tool("exoticores:pick_sideronatrite", {
 	description = "sideronatrite Pickaxe",
 	inventory_image = "exoticores_tool_sideronatritepick.png",
 	tool_capabilities = {
-		full_punch_interval = 0.9,
+		full_punch_interval = 0.3,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=60, maxlevel=3},
+			cracky = {times={[1]=1.5, [2]=.7, [3]=.35}, uses=300, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
 	},
@@ -83,9 +83,8 @@ minetest.register_tool("exoticores:shovel_sideronatrite", {
 	tool_capabilities = {
 		full_punch_interval = 1.0,
 		max_drop_level=1,
-		range = 5.0,
 		groupcaps={
-			crumbly = {times={[1]=1.10, [2]=0.50, [3]=0.30}, uses=60, maxlevel=3},
+			crumbly = {times={[1]=.750, [2]=0.30, [3]=0.20}, uses=6000, maxlevel=3},
 		},
 		damage_groups = {fleshy=4},
 	},
@@ -98,7 +97,7 @@ minetest.register_tool("exoticores:axe_sideronatrite", {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
 		groupcaps={
-			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=60, maxlevel=2},
+			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=6000, maxlevel=2},
 		},
 		damage_groups = {fleshy=7},
 	},
@@ -111,7 +110,7 @@ minetest.register_tool("exoticores:sword_sideronatrite", {
 		full_punch_interval = 0.1,
 		max_drop_level=1,
 		groupcaps={
-			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=1600, maxlevel=3},
+			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=16000, maxlevel=3},
 		},
 		damage_groups = {fleshy=20},
 	}
@@ -133,18 +132,9 @@ minetest.register_ore({
 		ore            = "exoticores:stone_with_sideronatrite",
 		wherein        = "default:stone",
 		clust_scarcity = 24 * 24 * 24,
-		clust_num_ores = 15,
+		clust_num_ores = 3,
 		clust_size     = 6,
 		y_min          = -31000,
-		y_max          = 0,
+		y_max          = -4000,
 	})
-minetest.register_ore({
-		ore_type       = "scatter",
-		ore            = "exoticores:stone_with_sideronatrite",
-		wherein        = "default:stone",
-		clust_scarcity = 8 * 8 * 8,
-		clust_num_ores = 15,
-		clust_size     = 6,
-		y_min          = -1100,
-		y_max          = -1000,
-	})
+

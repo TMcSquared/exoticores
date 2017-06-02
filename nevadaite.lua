@@ -7,7 +7,7 @@ minetest.register_node("exoticores:stone_with_nevadaite", {
 	description = "Nevadaite Ore",
 	drop = "exoticores:nevadaite_lump",
 	paramtype = "light",
-	light_source = 10,
+	light_source = 4,
 })
 
 minetest.register_node("exoticores:nevadaite_block", {
@@ -15,7 +15,7 @@ minetest.register_node("exoticores:nevadaite_block", {
 	groups = {cracky=1},
 	description = "Nevadaite Block",
 	paramtype = "light",
-	light_source = 20,
+	light_source = 5,
 })
 
 --crafting--
@@ -80,22 +80,13 @@ minetest.register_ore({
 		ore_type       = "scatter",
 		ore            = "exoticores:stone_with_nevadaite",
 		wherein        = "default:stone",
-		clust_scarcity = 8 * 8 * 8,
-		clust_num_ores = 10,
+		clust_scarcity = 24 * 24 * 24,
+		clust_num_ores = 5,
 		clust_size     = 6,
 		y_min          = -31000,
 		y_max          = 0,
 	})
-minetest.register_ore({
-		ore_type       = "scatter",
-		ore            = "exoticores:stone_with_nevadaite",
-		wherein        = "default:stone",
-		clust_scarcity = 8 * 8 * 8,
-		clust_num_ores = 30,
-		clust_size     = 6,
-		y_min          = -200,
-		y_max          = -190,
-	})
+
 --tools--
 
 minetest.register_tool("exoticores:pick_nevadaite", {
@@ -105,7 +96,7 @@ minetest.register_tool("exoticores:pick_nevadaite", {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=60, maxlevel=3},
+			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=100, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
 	},
@@ -120,7 +111,7 @@ minetest.register_tool("exoticores:shovel_nevadaite", {
 		max_drop_level=1,
 		range = 5.0,
 		groupcaps={
-			crumbly = {times={[1]=1.10, [2]=0.50, [3]=0.30}, uses=60, maxlevel=3},
+			crumbly = {times={[1]=1.10, [2]=0.50, [3]=0.30}, uses=100, maxlevel=3},
 		},
 		damage_groups = {fleshy=4},
 	},
@@ -133,7 +124,7 @@ minetest.register_tool("exoticores:axe_nevadaite", {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
 		groupcaps={
-			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=60, maxlevel=2},
+			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=100, maxlevel=2},
 		},
 		damage_groups = {fleshy=7},
 	},
@@ -146,7 +137,7 @@ minetest.register_tool("exoticores:sword_nevadaite", {
 		full_punch_interval = 0.1,
 		max_drop_level=1,
 		groupcaps={
-			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=80, maxlevel=3},
+			snappy={times={[1]=1.90, [2]=0.90, [3]=0.30}, uses=100, maxlevel=3},
 		},
 		damage_groups = {fleshy=8},
 	}

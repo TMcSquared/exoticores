@@ -6,7 +6,7 @@ minetest.register_node("exoticores:stone_with_cobaltominite", {
 	description = "Cobaltominite Ore",
 	drop = "exoticores:cobaltominite_lump",
 	paramtype = "light",
-	light_source = 10,
+	light_source = 5,
 })
 
 minetest.register_node("exoticores:cobaltominite_block", {
@@ -14,7 +14,7 @@ minetest.register_node("exoticores:cobaltominite_block", {
 	groups = {cracky=1},
 	description = "Cobaltominite Block",
 	paramtype = "light",
-	light_source = 20,
+	light_source = 6,
 })
 
 --crafting--
@@ -78,21 +78,11 @@ minetest.register_ore({
 		ore_type       = "scatter",
 		ore            = "exoticores:stone_with_cobaltominite",
 		wherein        = "default:stone",
-		clust_scarcity = 12 * 12 * 12,
-		clust_num_ores = 10,
+		clust_scarcity = 24 * 24 * 24,
+		clust_num_ores = 4,
 		clust_size     = 6,
 		y_min          = -31000,
-		y_max          = 0,
-	})
-minetest.register_ore({
-		ore_type       = "scatter",
-		ore            = "exoticores:stone_with_cobaltominite",
-		wherein        = "default:stone",
-		clust_scarcity = 6 * 6 * 6,
-		clust_num_ores = 10,
-		clust_size     = 6,
-		y_min          = -300,
-		y_max          = -275,
+		y_max          = -2000,
 	})
 --tools--
 minetest.register_tool("exoticores:pick_cobaltominite", {
@@ -102,10 +92,10 @@ minetest.register_tool("exoticores:pick_cobaltominite", {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=60, maxlevel=3},
+			cracky = {times={[1]=1.75, [2]=.90, [3]=0.40}, uses=200, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
-	},
+	}
 })
 
 minetest.register_tool("exoticores:shovel_cobaltominite", {
@@ -115,9 +105,8 @@ minetest.register_tool("exoticores:shovel_cobaltominite", {
 	tool_capabilities = {
 		full_punch_interval = 1.0,
 		max_drop_level=1,
-		range = 5.0,
 		groupcaps={
-			crumbly = {times={[1]=1.10, [2]=0.50, [3]=0.30}, uses=60, maxlevel=3},
+			crumbly = {times={[1]=1.0, [2]=0.40, [3]=0.25}, uses=200, maxlevel=3},
 		},
 		damage_groups = {fleshy=4},
 	},
@@ -130,7 +119,7 @@ minetest.register_tool("exoticores:axe_cobaltominite", {
 		full_punch_interval = 0.9,
 		max_drop_level=1,
 		groupcaps={
-			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=60, maxlevel=2},
+			choppy={times={[1]=2.10, [2]=0.90, [3]=0.50}, uses=200, maxlevel=2},
 		},
 		damage_groups = {fleshy=7},
 	},

@@ -6,7 +6,7 @@ minetest.register_node("exoticores:stone_with_trinium", {
 	description = "trinium Ore",
 	drop = "exoticores:trinium_lump",
 	paramtype = "light",
-	light_source = 10,
+	light_source = 8,
 })
 
 minetest.register_node("exoticores:trinium_block", {
@@ -14,7 +14,7 @@ minetest.register_node("exoticores:trinium_block", {
 	groups = {cracky=1},
 	description = "trinium Block",
 	paramtype = "light",
-	light_source = 20,
+	light_source = 9,
 })
 --crafting--
 minetest.register_craft({
@@ -71,7 +71,7 @@ minetest.register_tool("exoticores:pick_trinium", {
 		full_punch_interval = 0.9,
 		max_drop_level=3,
 		groupcaps={
-			cracky = {times={[1]=2.0, [2]=1.0, [3]=0.50}, uses=60, maxlevel=3},
+			cracky = {times={[1]=.75, [2]=.4, [3]=.2}, uses=500, maxlevel=3},
 		},
 		damage_groups = {fleshy=5},
 	},
@@ -134,19 +134,8 @@ minetest.register_ore({
 		ore            = "exoticores:stone_with_trinium",
 		wherein        = "default:stone",
 		clust_scarcity = 25 * 25 * 25,
-		clust_num_ores = 10,
+		clust_num_ores = 2,
 		clust_size     = 6,
 		y_min          = -31000,
-		y_max          = 0,
+		y_max          = -16000,
 	})
-	
-minetest.register_ore({
-		ore_type       = "scatter",
-		ore            = "exoticores:stone_with_trinium",
-		wherein        = "default:stone",
-		clust_scarcity = 8 * 8 * 8,
-		clust_num_ores = 10,
-		clust_size     = 6,
-		y_min          = -3100,
-		y_max          = -3000,
-	})	
