@@ -31,6 +31,12 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
+	output = 'exoticores:trinium_bar 9',
+	recipe = {
+		{'exoticores:trinium_block'},
+	}
+})
+minetest.register_craft({
 	output = 'exoticores:pick_trinium',
 	recipe = {
 		{'exoticores:trinium_bar', 'exoticores:trinium_bar', 'exoticores:trinium_bar'},
