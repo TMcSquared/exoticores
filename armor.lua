@@ -132,31 +132,31 @@
 	minetest.register_tool("exoticores:helmet_lonsdaleite", {
 		description = "lonsdaleite Helmet",
 		inventory_image = "exoticores_armor_inv_helmet_lonsdaleite.png",
-		groups = {armor_head=18, armor_heal=100, physics_jump=0.15, armor_fire=10, armor_use=10,physics_gravity=-.16},
+		groups = {armor_head=18, armor_heal=100, physics_jump=0.15, physics_speed=0.2, armor_fire=10, armor_use=10,physics_gravity=-.16},
 		wear = 0,
 	})
 	minetest.register_tool("exoticores:chestplate_lonsdaleite", {
 		description = "lonsdaleite Chestplate",
 		inventory_image = "exoticores_armor_inv_chestplate_lonsdaleite.png",
-		groups = {armor_torso=18, armor_heal=100, physics_jump=0.15, armor_fire=10, armor_use=10,physics_gravity=-.16},
+		groups = {armor_torso=18, armor_heal=100, physics_jump=0.15, physics_speed=0.2, armor_fire=10, armor_use=10,physics_gravity=-.16},
 		wear = 0,
 	})
 	minetest.register_tool("exoticores:leggings_lonsdaleite", {
 		description = "lonsdaleite Leggings",
 		inventory_image = "exoticores_armor_inv_leggings_lonsdaleite.png",
-		groups = {armor_legs=18, armor_heal=100, physics_jump=0.15, armor_fire=10, armor_use=10,physics_gravity=-.16},
+		groups = {armor_legs=18, armor_heal=100, physics_jump=0.15, physics_speed=0.2, armor_fire=10, armor_use=10,physics_gravity=-.16},
 		wear = 0,
 	})
 	minetest.register_tool("exoticores:boots_lonsdaleite", {
 		description = "lonsdaleite Boots",
 		inventory_image = "exoticores_armor_inv_boots_lonsdaleite.png",
-		groups = {armor_feet=18, armor_heal=100, physics_jump=0.15, armor_fire=10, armor_use=10,physics_gravity=-.16},
+		groups = {armor_feet=18, armor_heal=100, physics_jump=0.15, physics_speed=0.2, armor_fire=10, armor_use=10,physics_gravity=-.16},
 		wear = 0,
 	})
 	minetest.register_tool("exoticores:shield_lonsdaleite", {
 		description = "lonsdaleite Shield",
 		inventory_image = "exoticores_armor_inv_shield_lonsdaleite.png",
-		groups = {armor_shield=18, armor_heal=100, physics_jump=0.15, armor_fire=10, armor_use=10,physics_gravity=-.16},
+		groups = {armor_shield=18, armor_heal=100, physics_jump=0.15, physics_speed=0.2, armor_fire=10, armor_use=10,physics_gravity=-.16},
 		wear = 0,
 	})
 
