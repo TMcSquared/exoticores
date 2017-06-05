@@ -173,7 +173,7 @@ local craft_ingreds = {
 
 for k, v in pairs(craft_ingreds) do
 	minetest.register_craft({
-		output = "exoticores_armor:helmet_"..k,
+		output = "exoticores:helmet_"..k,
 		recipe = {
 			{v, v, v},
 			{v, "", v},
@@ -181,7 +181,7 @@ for k, v in pairs(craft_ingreds) do
 		},
 	})
 	minetest.register_craft({
-		output = "exoticores_armor:chestplate_"..k,
+		output = "exoticores:chestplate_"..k,
 		recipe = {
 			{v, "", v},
 			{v, v, v},
@@ -189,7 +189,7 @@ for k, v in pairs(craft_ingreds) do
 		},
 	})
 	minetest.register_craft({
-		output = "exoticores_armor:leggings_"..k,
+		output = "exoticores:leggings_"..k,
 		recipe = {
 			{v, v, v},
 			{v, "", v},
@@ -197,14 +197,14 @@ for k, v in pairs(craft_ingreds) do
 		},
 	})
 	minetest.register_craft({
-		output = "exoticores_armor:boots_"..k,
+		output = "exoticores:boots_"..k,
 		recipe = {
 			{v, "", v},
 			{v, "", v},
 		},
 	})
 	minetest.register_craft({
-		output = "exoticores_armor:shield_"..k,
+		output = "exoticores:shield_"..k,
 		recipe = {
 			{v, v, v},
 			{v, v, v},
