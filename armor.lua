@@ -106,7 +106,7 @@
 	minetest.register_tool("exoticores:chestplate_edoylerite", {
 		description = "edoylerite Chestplate",
 		inventory_image = "exoticores_armor_inv_chestplate_edoylerite.png",
-		groups = {armor_torso=18, armor_heal=40, physics_jump=0.1, armor_fire=6, armor_use=25,physics_gravity=-.16},
+		groups = {armor_torso=18, armor_heal=40, physics_jump=0.1, armor_fire=6, armor_use=25,physics_gravity=-.08},
 		wear = 0,
 	})
 	minetest.register_tool("exoticores:leggings_edoylerite", {
