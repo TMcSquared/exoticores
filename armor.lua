@@ -168,7 +168,7 @@ local craft_ingreds = {
 	cobaltominite = "exoticores:cobaltominite_bar",
 	sideronatrite = "exoticores:sideronatrite_bar",
 	edoylerite = "exoticores:edoylerite_bar",
-	lonsdaleite = "exoticores:lonsdaleite_bar",
+	lonsdaleite = "exoticores:lonsdaleite_crystal",
 }
 
 for k, v in pairs(craft_ingreds) do
