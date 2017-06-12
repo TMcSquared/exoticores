@@ -106,7 +106,7 @@
 	minetest.register_tool("exoticores:chestplate_edoylerite", {
 		description = "edoylerite Chestplate",
 		inventory_image = "exoticores_armor_inv_chestplate_edoylerite.png",
-		groups = {armor_torso=18, armor_heal=40, physics_jump=0.1, armor_fire=6, armor_use=25,physics_gravity=-.08},
+		groups = {armor_torso=18, armor_heal=40, physics_jump=0.1, armor_fire=6, armor_use=25,physics_gravity=-.16},
 		wear = 0,
 	})
 	minetest.register_tool("exoticores:leggings_edoylerite", {
@@ -168,7 +168,7 @@ local craft_ingreds = {
 	cobaltominite = "exoticores:cobaltominite_bar",
 	sideronatrite = "exoticores:sideronatrite_bar",
 	edoylerite = "exoticores:edoylerite_bar",
-	lonsdaleite = "exoticores:lonnsdaleite_bar",
+	lonsdaleite = "exoticores:lonsdaleite_bar",
 }
 
 for k, v in pairs(craft_ingreds) do
