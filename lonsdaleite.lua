@@ -106,6 +106,14 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
+	output = 'exoticores:axe_lonsdaleite',
+	recipe = {
+		{'exoticores:lonsdaleite_crystal', 'exoticores:lonsdaleite_crystal', ''},
+		{'exoticores:lonsdaleite_crystal', 'group:stick', ''},
+		{'', 'group:stick', ''},
+	}
+})
+minetest.register_craft({
 	output = 'exoticores:sword_lonsdaleite',
 	recipe = {
 		{'', 'exoticores:lonsdaleite_crystal', ''},

@@ -41,6 +41,12 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
+	output = 'exoticores:nevadaite_bar 9',
+	recipe = {
+		{'exoticores:nevadaite_block'}
+	}
+})
+minetest.register_craft({
 	output = 'exoticores:shovel_nevadaite',
 	recipe = {
 		{'', 'exoticores:nevadaite_bar', ''},
@@ -53,6 +59,14 @@ minetest.register_craft({
 	recipe = {
 		{'', 'exoticores:nevadaite_bar', 'exoticores:nevadaite_bar'},
 		{'', 'group:stick', 'exoticores:nevadaite_bar'},
+		{'', 'group:stick', ''},
+	}
+})
+minetest.register_craft({
+	output = 'exoticores:axe_nevadaite',
+	recipe = {
+		{'exoticores:nevadaite_bar', 'exoticores:nevadaite_bar', ''},
+		{'exoticores:nevadaite_bar', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })

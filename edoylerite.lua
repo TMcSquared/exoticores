@@ -31,6 +31,12 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
+	output = 'exoticores:edoylerite_bar 9',
+	recipe = {
+		{'exoticores:edoylerite_block'}
+	}
+})
+minetest.register_craft({
 	output = 'exoticores:pick_edoylerite',
 	recipe = {
 		{'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar'},
@@ -51,6 +57,14 @@ minetest.register_craft({
 	recipe = {
 		{'', 'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar'},
 		{'', 'group:stick', 'exoticores:edoylerite_bar'},
+		{'', 'group:stick', ''},
+	}
+})
+minetest.register_craft({
+	output = 'exoticores:axe_edoylerite',
+	recipe = {
+		{'exoticores:edoylerite_bar', 'exoticores:edoylerite_bar', ''},
+		{'exoticores:edoylerite_bar', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })

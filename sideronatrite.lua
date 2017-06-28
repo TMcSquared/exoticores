@@ -31,6 +31,12 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
+	output = 'exoticores:sideronatrite_bar 9',
+	recipe = {
+		{'exoticores:sideronatrite_block'}
+	}
+})
+minetest.register_craft({
 	output = 'exoticores:pick_sideronatrite',
 	recipe = {
 		{'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
@@ -51,6 +57,14 @@ minetest.register_craft({
 	recipe = {
 		{'', 'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar'},
 		{'', 'group:stick', 'exoticores:sideronatrite_bar'},
+		{'', 'group:stick', ''},
+	}
+})
+minetest.register_craft({
+	output = 'exoticores:axe_sideronatrite',
+	recipe = {
+		{'exoticores:sideronatrite_bar', 'exoticores:sideronatrite_bar', ''},
+		{'exoticores:sideronatrite_bar', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })
