@@ -14,14 +14,6 @@ minetest.register_node("exoticores:lonsdaleite_block", {
 minetest.register_craft({
 	output = "exoticores:lonsdaleite_crystal",
 	recipe = {
-		{'exoticores:lonsdaleite_compressed_shard', 'exoticores:lonsdaleite_compressed_shard', 'exoticores:lonsdaleite_compressed_shard'},
-		{'exoticores:lonsdaleite_compressed_shard', 'exoticores:lonsdaleite_compressed_shard', 'exoticores:lonsdaleite_compressed_shard'},
-		{'exoticores:lonsdaleite_compressed_shard', 'exoticores:lonsdaleite_compressed_shard', 'exoticores:lonsdaleite_compressed_shard'},
-	}
-})
-minetest.register_craft({
-	output = "exoticores:lonsdaleite_compressed_shard",
-	recipe = {
 		{'exoticores:lonsdaleite_shard', 'exoticores:lonsdaleite_shard', 'exoticores:lonsdaleite_shard'},
 		{'exoticores:lonsdaleite_shard', 'exoticores:lonsdaleite_shard', 'exoticores:lonsdaleite_shard'},
 		{'exoticores:lonsdaleite_shard', 'exoticores:lonsdaleite_shard', 'exoticores:lonsdaleite_shard'},
@@ -58,15 +50,9 @@ minetest.register_craft({
 	}
 })
 minetest.register_craft({
-	output = 'exoticores:lonsdaleite_compressed_shard 9',
-	recipe = {
-		{'exoticores:lonsdaleite_crystal'},
-	}
-})
-minetest.register_craft({
 	output = 'exoticores:lonsdaleite_shard 9',
 	recipe = {
-		{'exoticores:lonsdaleite_compressed_shard'},
+		{'exoticores:lonsdaleite_crystal'},
 	}
 })
 minetest.register_craft({
@@ -193,11 +179,6 @@ minetest.register_craftitem("exoticores:lonsdaleite_shard", {
         stack_max = 1000,
 	description = "lonsdaleite shard",
 	inventory_image = "exoticores_lonsdaleite_shard.png",
-})
-minetest.register_craftitem("exoticores:lonsdaleite_compressed_shard", {
-        stack_max = 1000,
-	description = "lonsdaleite compressed shard",
-	inventory_image = "exoticores_lonsdaleite_compressed_shard.png",
 })
 minetest.register_craftitem("exoticores:lonsdaleite_crystal", {
 	description = "lonsdaleite crystal",
