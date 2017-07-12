@@ -137,7 +137,7 @@ minetest.register_craftitem("exoticores:edoylerite_lump", {
 	inventory_image = "exoticores_edoylerite_lump.png",
 })
 minetest.register_craftitem("exoticores:edoylerite_bar", {
-	description = "edoylerite Lump",
+	description = "edoylerite Bar",
 	inventory_image = "exoticores_edoylerite_bar.png",
 })
 
