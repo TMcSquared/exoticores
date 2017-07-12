@@ -85,7 +85,7 @@ minetest.register_craftitem("exoticores:nevadaite_lump", {
 	inventory_image = "exoticores_nevadaite_lump.png",
 })
 minetest.register_craftitem("exoticores:nevadaite_bar", {
-	description = "Nevadaite Lump",
+	description = "Nevadaite Bar",
 	inventory_image = "exoticores_nevadaite_bar.png",
 })
 
