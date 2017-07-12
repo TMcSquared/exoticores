@@ -136,7 +136,7 @@ minetest.register_craftitem("exoticores:sideronatrite_lump", {
 	inventory_image = "exoticores_sideronatrite_lump.png",
 })
 minetest.register_craftitem("exoticores:sideronatrite_bar", {
-	description = "sideronatrite Lump",
+	description = "sideronatrite Bar",
 	inventory_image = "exoticores_sideronatrite_bar.png",
 })
 
