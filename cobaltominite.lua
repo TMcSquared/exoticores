@@ -82,7 +82,7 @@ minetest.register_craftitem("exoticores:cobaltominite_lump", {
 	inventory_image = "exoticores_cobaltominite_lump.png",
 })
 minetest.register_craftitem("exoticores:cobaltominite_bar", {
-	description = "Cobaltominite Lump",
+	description = "Cobaltominite Bar",
 	inventory_image = "exoticores_cobaltominite_bar.png",
 })
 
