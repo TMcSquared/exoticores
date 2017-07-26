@@ -202,7 +202,7 @@ minetest.override_item("default:dirt_with_grass", {
 		items = {
 			{
 				items = {'exoticores:lonsdaleite_dust', 'default:dirt'},
-				rarity = 30,
+				rarity = 20,
 			},
 			{
 				items = {'default:dirt'},
@@ -216,7 +216,7 @@ minetest.override_item("default:dirt_with_dry_grass", {
 		items = {
 			{
 				items = {'exoticores:lonsdaleite_dust', 'default:dirt'},
-				rarity = 30,
+				rarity = 20,
 			},
 			{
 				items = {'default:dirt'},
@@ -230,7 +230,7 @@ minetest.override_item("default:dirt_with_snow", {
 		items = {
 			{
 				items = {'exoticores:lonsdaleite_dust', 'default:dirt'},
-				rarity = 30,
+				rarity = 20,
 			},
 			{
 				items = {'default:dirt'},
@@ -244,7 +244,7 @@ minetest.override_item("default:silver_sand", {
 		items = {
 			{
 				items = {'exoticores:lonsdaleite_dust', 'default:silver_sand'},
-				rarity = 30,
+				rarity = 20,
 			},
 			{
 				items = {'default:silver_sand'},
