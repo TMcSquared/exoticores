@@ -103,7 +103,7 @@ minetest.register_craft({
 	output = 'exoticores:sword_lonsdaleite',
 	recipe = {
 		{'', 'exoticores:lonsdaleite_crystal', ''},
-		{'', 'default:gold_ingot', ''},
+		{'', 'exoticores:lonsdaleite_crystal', ''},
 		{'', 'group:stick', ''},
 	}
 })
