@@ -70,7 +70,7 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'exoticores:pick_lonsdaleite',
 	recipe = {
-		{'exoticores:lonsdaleite_crystal', 'exoticores:lonsdaleite_crystal', 'exoticores:lonsdaleite_crystal'},
+		{'default:diamond_block', 'exoticores:lonsdaleite_crystal', 'default:diamond_block'},
 		{'', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
@@ -86,16 +86,16 @@ minetest.register_craft({
 minetest.register_craft({
 	output = 'exoticores:axe_lonsdaleite',
 	recipe = {
-		{'', 'exoticores:lonsdaleite_crystal', 'exoticores:lonsdaleite_crystal'},
-		{'', 'group:stick', 'exoticores:lonsdaleite_crystal'},
+		{'', 'exoticores:lonsdaleite_crystal', 'default:diamond_block'},
+		{'', 'group:stick', 'default:diamond_block'},
 		{'', 'group:stick', ''},
 	}
 })
 minetest.register_craft({
 	output = 'exoticores:axe_lonsdaleite',
 	recipe = {
-		{'exoticores:lonsdaleite_crystal', 'exoticores:lonsdaleite_crystal', ''},
-		{'exoticores:lonsdaleite_crystal', 'group:stick', ''},
+		{'default:diamond_block', 'exoticores:lonsdaleite_crystal', ''},
+		{'default:diamond_block', 'group:stick', ''},
 		{'', 'group:stick', ''},
 	}
 })
@@ -103,7 +103,7 @@ minetest.register_craft({
 	output = 'exoticores:sword_lonsdaleite',
 	recipe = {
 		{'', 'exoticores:lonsdaleite_crystal', ''},
-		{'', 'exoticores:lonsdaleite_crystal', ''},
+		{'', 'default:gold_ingot', ''},
 		{'', 'group:stick', ''},
 	}
 })
@@ -238,6 +238,7 @@ minetest.override_item("default:dirt_with_snow", {
 		}
 	},
 })
+
 minetest.override_item("default:silver_sand", {
 	drop = {
 		max_items = 1,
@@ -252,4 +253,3 @@ minetest.override_item("default:silver_sand", {
 		}
 	},
 })
-

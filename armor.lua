@@ -168,7 +168,6 @@ local craft_ingreds = {
 	cobaltominite = "exoticores:cobaltominite_bar",
 	sideronatrite = "exoticores:sideronatrite_bar",
 	edoylerite = "exoticores:edoylerite_bar",
-	lonsdaleite = "exoticores:lonsdaleite_crystal",
 }
 
 for k, v in pairs(craft_ingreds) do
@@ -213,4 +212,55 @@ for k, v in pairs(craft_ingreds) do
 	})
 end
 
+
+
+	local v = "exoticores:lonsdaleite_crystal"
+        local g = "default:gold_ingot"
+        
+        
+        minetest.register_craft({
+		output = "exoticores:helmet_lonsdaleite",
+		recipe = {
+			{v, g, v},
+			{g, "", g},
+			{"", "", ""},
+		},
+	})
+	minetest.register_craft({
+		output = "exoticores:chestplate_lonsdaleite",
+		recipe = {
+			{v, "", v},
+			{g, v, g},
+			{g, g, g},
+		},
+	})
+	minetest.register_craft({
+		output = "exoticores:leggings_lonsdaleite",
+		recipe = {
+			{v, g, v},
+			{g, "", g},
+			{g, "", g},
+		},
+	})
+	minetest.register_craft({
+		output = "exoticores:boots_lonsdaleite",
+		recipe = {
+			{v, "", v},
+			{g, "", g},
+		},
+	})
+	minetest.register_craft({
+		output = "exoticores:shield_lonsdaleite",
+		recipe = {
+			{g, g, g},
+			{g, v, g},
+			{"", v, ""},
+		},
+	})
+        
+        
+        
+        
+        
+        
 
