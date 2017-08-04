@@ -245,7 +245,7 @@ minetest.override_item("default:silver_sand", {
 		items = {
 			{
 				items = {'exoticores:lonsdaleite_dust', 'default:silver_sand'},
-				rarity = 20,
+				rarity = 10,
 			},
 			{
 				items = {'default:silver_sand'},
