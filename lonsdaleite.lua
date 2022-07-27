@@ -107,6 +107,39 @@ minetest.register_craft({
 		{'', 'group:stick', ''},
 	}
 })
+-- repair crafts for lonsdaleite --
+minetest.register_craft({
+	output = 'exoticores:sword_lonsdaleite',
+	recipe = {
+		{ 'exoticores:lonsdaleite_shard','exoticores:sword_lonsdaleite','' },
+		{ '','','' },
+		{ '','','' }
+	}
+})
+minetest.register_craft({
+	output = 'exoticores:pick_lonsdaleite',
+	recipe = {
+		{ 'exoticores:lonsdaleite_shard','exoticores:pick_lonsdaleite','' },
+		{ '','','' },
+		{ '','','' }
+	}
+})
+minetest.register_craft({
+	output = 'exoticores:shovel_nevadaite',
+	recipe = {
+		{ 'exoticores:lonsdaleite_shard','exoticores:shovel_lonsdaleite','' },
+		{ '','','' },
+		{ '','','' }
+	}
+})
+minetest.register_craft({
+	output = 'exoticores:axe_lonsdaleite',
+	recipe = {
+		{ 'exoticores:lonsdaleite_shard','exoticores:axe_lonsdaleite','' },
+		{ '','','' },
+		{ '','','' }
+	}
+})
 --tools--
 minetest.register_tool("exoticores:pick_lonsdaleite", {
 	description = "lonsdaleite Pickaxe",
@@ -249,6 +282,21 @@ minetest.override_item("default:silver_sand", {
 			},
 			{
 				items = {'default:silver_sand'},
+			}
+		}
+	},
+})
+
+minetest.override_item("default:silver_sandstone", {
+	drop = {
+		max_items = 1,
+		items = {
+			{
+				items = {'exoticores:lonsdaleite_dust', 'default:silver_sandstone'},
+				rarity = 7,
+			},
+			{
+				items = {'default:silver_sandstone'},
 			}
 		}
 	},
